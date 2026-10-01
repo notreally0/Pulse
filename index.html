@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pulse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="glow"></div>
+
+    <div class="app-cointainer">
+        <header>
+            <div class="brand"><span class="accent">PULSE</span><span class="pumpkin"> SOUND</span></div>
+            <div class="nav-links">
+                <a href="guide.html" class="guide-link">HOW TO USE THIS [?]</a>
+            </div>
+        </header>
+
+        <div class="main-grid">
+            <div class="panel canvas-panel">
+                <div class="panel-title">NEON WAVEFORM VISUALIZER</div>
+                <div class="canvas-box">
+                    <canvas id="visualizer"> </canvas>
+                </div>
+
+                <div class="recorder-bar">
+                    <button id="rec-btn" class="ctrl-btn rec">REC</button>
+                    <button id="play-btn" class="ctrl-btn play" disabled>PLAY</button>
+                    <button id="clear-btn" class="ctrl-btn clear" disabled>CLEAR</button>
+                    <span id="rec-status" class="status-tag">STATUS: IDLE</span>
+                </div>
+            </div>
+
+            <div class="panel controls-panel">
+                <div class="panel-title">SYNTH MATRIX (PRESS KEYS A-H)</div>
+                <div class="pad-grid">
+                    <button class="pad-btn" data-key="A" data-freq="220">
+                        <span class="pad-key">[A]</span>
+                        <span class="pad-label">SUB BASS</span>
+                    </button>
+                    <button class="pad-btn" data-key="S" data-freq="330">
+                        <span class="pad-key">[S]</span>
+                        <span class="pad-label">CYBER PULSE</span>
+                    </button>
+                    <button class="pad-btn" data-key="D" data-freq="440">
+                        <span class="pad-key">[D]</span>
+                        <span class="pad-label">NEON WAVE</span>
+                    </button>
+                    <button class="pad-btn" data-key="F" data-freq="554" >
+                        <span class="pad-key">[F]</span>
+                        <span class="pad-label">LASER LEAD</span>
+                    </button>
+                    <button class="pad-btn" data-key="G" data-freq="659">
+                        <span class="pad-key">[G]</span>
+                        <span class="pad-label">GHOST RESONANCE</span>
+                    </button>
+                    <button class="pad-btn" data-key="H" data-freq="880">
+                        <span class="pad-key">[H]</span>
+                        <span class="pad-label">HIGH BEAM</span>
+                    </button>
+                </div>
+                <p class="hint">Click buttons or press keys [A, S, D, F, G, H] on your keyboard.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
