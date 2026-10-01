@@ -281,3 +281,19 @@ canvas {
     border-radius: 4px;
     font-size: 0.8rem;
 }
+
+.pumpkins {
+    position: fixed;
+    inset: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    pointer-events: none;
+    z-index: 100;
+    font-size: 2rem;
+}
+
+.pumpkins span {
+    filter: drop-shadow(0 0 10px var(--pumpkin));
+}
